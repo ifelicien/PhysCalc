@@ -17,6 +17,7 @@ public class avgCalc {
             System.out.println("Do you want to run the program again? ");
             run = myObj.nextInt();
         }
+
         while (run != 0);
         if (run == 0) {
             System.out.println("Thank you, please start the program again to calculate AVG!");
