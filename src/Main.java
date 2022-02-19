@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        avgCalc myAvgCalc = new avgCalc();
+
         Scanner myObj = new Scanner(System.in);
         System.out.println("Select an option");
         System.out.println("1. Average\n0. Exit");
@@ -13,9 +15,9 @@ public class Main {
 
                 System.out.println("Average Calculator\n\n");
                 System.out.println("enter 3 numbers to average");
-
                 double x, y, z = myObj.nextDouble();
 
+                avgCalc.Average();
                 break;
             case 2:
                 System.out.println("Restart the program and select an option");
