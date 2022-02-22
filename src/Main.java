@@ -15,9 +15,11 @@ public class Main {
 
                 System.out.println("Average Calculator\n\n");
                 System.out.println("enter 3 numbers to average");
-                double x, y, z = myObj.nextDouble();
+                double x = myObj.nextDouble();
+                double y = myObj.nextDouble();
+                double z = myObj.nextDouble();
+                double result =  (x + y + z) / 3;;
 
-                avgCalc.Average();
                 break;
             case 2:
                 System.out.println("Restart the program and select an option");
