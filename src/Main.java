@@ -18,8 +18,9 @@ public class Main {
                 double x = myObj.nextDouble();
                 double y = myObj.nextDouble();
                 double z = myObj.nextDouble();
-                double result =  (x + y + z) / 3;;
+                double result =  (x + y + z);
 
+                avgCalc.Average(result);
                 break;
             case 2:
                 System.out.println("Restart the program and select an option");
