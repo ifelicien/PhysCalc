@@ -4,10 +4,11 @@ public class Main {
     public static void main(String[] args) {
         avgCalc myAvgCalc = new avgCalc();
         percentError pER = new percentError();
+        weight findWeight = new weight();
 
         Scanner myObj = new Scanner(System.in);
         System.out.println("Select an option");
-        System.out.println("1. Average\n2.Percent Error\n0. Exit");
+        System.out.println("1. Average\n2. Percent Error\n3. Weight Calculate\n 0. Exit");
 
         int mySelection = myObj.nextInt();
 
@@ -34,6 +35,12 @@ public class Main {
 
                 pER.pError(vA, vE);
                 break;
+            }
+            case 3:{
+                System.out.println("please enter your mass in kilograms ");
+                double mass = myObj.nextDouble();
+
+                findWeight.weight_Calc(mass);
             }
 
             case 0: {
