@@ -40,7 +40,10 @@ public class Main {
                 System.out.println("please enter your mass in kilograms ");
                 double mass = myObj.nextDouble();
 
-                findWeight.weight_Calc(mass);
+                System.out.println("how many loops");
+                double numLoops = myObj.nextDouble();
+
+                findWeight.weight_Calc(mass, numLoops);
             }
 
             case 0: {
