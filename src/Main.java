@@ -8,7 +8,7 @@ public class Main {
 
         Scanner myObj = new Scanner(System.in);
         System.out.println("Select an option");
-        System.out.println("1. Average\n2. Percent Error\n3. Weight Calculate\n 0. Exit");
+        System.out.println("1. Average\n2. Percent Error\n3. Weight Calculate\n4. Calculate Ohms 0. Exit");
 
         int mySelection = myObj.nextInt();
 
@@ -17,10 +17,12 @@ public class Main {
 
                 System.out.println("Average Calculator\n\n");
                 System.out.println("enter 3 numbers to average");
+
+                double w = myObj.nextDouble();
                 double x = myObj.nextDouble();
                 double y = myObj.nextDouble();
                 double z = myObj.nextDouble();
-                double result = (x + y + z);
+                double result = (w + x + y + z);
 
                 avgCalc.Average(result);
                 break;
@@ -44,6 +46,15 @@ public class Main {
                 double numLoops = myObj.nextDouble();
 
                 findWeight.weight_Calc(mass, numLoops);
+            }
+            case 4:{
+                double v = 12.00;
+                double i = 2.50;
+                double R;
+
+                R = v/i;
+
+                System.out.println(" result " + R + "ohms");
             }
 
             case 0: {
