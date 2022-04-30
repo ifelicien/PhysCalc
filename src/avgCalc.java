@@ -4,6 +4,7 @@ public class avgCalc {
 
         double finalRes = result / 4;
         System.out.println(result);
+        System.out.println(finalRes);
 
         // create reset function to jmp back to main
     }

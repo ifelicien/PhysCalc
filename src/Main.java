@@ -5,6 +5,7 @@ public class Main {
         avgCalc myAvgCalc = new avgCalc();
         percentError pER = new percentError();
         weight findWeight = new weight();
+        Pythagorean pythag = new Pythagorean();
 
         Scanner myObj = new Scanner(System.in);
         System.out.println("Select an option");
@@ -16,7 +17,7 @@ public class Main {
             case 1: {
 
                 System.out.println("Average Calculator\n\n");
-                System.out.println("enter 3 numbers to average");
+                System.out.println("enter 4 numbers to average");
 
                 double w = myObj.nextDouble();
                 double x = myObj.nextDouble();
@@ -55,6 +56,14 @@ public class Main {
                 R = v/i;
 
                 System.out.println(" result " + R + "ohms");
+            }
+            case 5:{
+                System.out.println("what is your left leg");
+                double a = myObj.nextDouble();
+                System.out.println("what is your right leg");
+                double b = myObj.nextDouble();
+
+                pythag.pTheorem(a, b);
             }
 
             case 0: {
